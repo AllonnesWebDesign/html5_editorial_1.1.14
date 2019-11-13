@@ -1,12 +1,5 @@
-h2 {
-
-     font-size: 3em; 
-
-}
-
-
 #sidebar h2 {
-    font-size: 4em;
+    font-size: 2em;
     color: #ffffff;
 }
 
@@ -23,7 +16,7 @@ h2 {
 
 
 #sidebar > .inner > .alt {
-    background-color: #97c300
+    background-color: #efe7c3
 }
 
 
@@ -33,12 +26,12 @@ h2 {
 }
 
 #menu ul li {
-    background-color: #ac2626;
+    background-color: #85a562;
 }
 
 
 #sidebar > .inner {
-    background-color: #ac2626;
+    background-color: #85a562;
 }
 
 
@@ -46,7 +39,9 @@ h2 {
     font-size: xxx-large;
 }
 
- 
+ul.contact li:before {
+    color: #ffffff;
+}
  
 /*body, input, select, textarea {
 Modifie la couleur des présentations d'articles

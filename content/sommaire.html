@@ -24,10 +24,30 @@
 #SET{exclus,#GET{exclus}|push{#ID_ARTICLE}}
 </BOUCLE_heroside>
 
-<section>
-	<INCLURE{fond=inclure/liste/articles,env,ajax,
+<header class="major">
+	<h2 class="#EDIT{titre}">Actualités</h2>
+</header>
+<INCLURE{fond=inclure/liste/articles_actualites,env,ajax,
 		parpage=#CONFIG{html5up/suivants_parpage,6},
 		exclus=#GET{exclus},
 		total=#CONFIG{html5up/suivants_total,12},
 		titre=#CONFIG{html5up/suivants_titre}} />
-</section>
+
+<header class="major">
+	<h2 class="#EDIT{titre}">Agenda</h2>
+</header>
+<INCLURE{fond=inclure/liste/articles_agenda,env,ajax,
+		parpage=#CONFIG{html5up/suivants_parpage,6},
+		exclus=#GET{exclus},
+		total=#CONFIG{html5up/suivants_total,12},
+		titre=#CONFIG{html5up/suivants_titre}} />
+
+<header class="major">
+	<h2 class="#EDIT{titre}">Derniers articles</h2>
+</header>
+<INCLURE{fond=inclure/liste/articles_derniers,env,ajax,
+		parpage=#CONFIG{html5up/suivants_parpage,6},
+		exclus=#GET{exclus},
+		total=#CONFIG{html5up/suivants_total,12},
+		titre=#CONFIG{html5up/suivants_titre}} />		
+		

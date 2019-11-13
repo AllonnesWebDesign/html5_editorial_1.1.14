@@ -1,0 +1,13 @@
+<B_articles>
+	#ANCRE_PAGINATION
+	<div class="posts">
+		<BOUCLE_articles(ARTICLES){par num titre, titre}{id_secteur?}{id_rubrique=49}
+			{!id_article IN #ENV{exclus}}
+			{0,#ENV{total,10}}
+			{!par date}
+			{pagination #ENV{parpage,10}}>
+		<INCLURE{fond=inclure/resume/article,id_article,env} />
+		</BOUCLE_articles>
+	</div>
+	[(#PAGINATION{page})]
+</B_articles>

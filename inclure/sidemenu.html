@@ -5,14 +5,13 @@
 	on l'affiche si son parent est expose ou est la racine du site. ]
 <B_rubriques>
 <nav id="menu">
-	<header class="major">
-		<h2>Menu</h2>
-	</header>
-	
+</br>
+</br>	
+</br>	
 	<ul>
 		<li><a class="accueil" href="#URL_SITE_SPIP"><:accueil_site:></a></li>
 	
-		<BOUCLE_rubriques(RUBRIQUES){par num titre, titre}{racine}>
+		<BOUCLE_rubriques(RUBRIQUES){id_rubrique !IN 49,66}{par num titre, titre}{racine}{doublons}>
 		[(#REM) si plus d'un article, la liste des articles, si au moins une sous-rubrique, la liste des sous-rubriques ]
 			#SET{smenu#ID_RUBRIQUE,non}
 			<BOUCLE_test_articles(ARTICLES){id_rubrique}{1,2}>
