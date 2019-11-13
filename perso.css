@@ -1,0 +1,62 @@
+h2 {
+
+     font-size: 3em; 
+
+}
+
+
+#sidebar h2 {
+    font-size: 4em;
+    color: #ffffff;
+}
+
+
+#sidebar #menu a.accueil {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+#sidebar #menu a {
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+
+#sidebar > .inner > .alt {
+    background-color: #97c300
+}
+
+
+#menu ul a, #menu ul span {
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+#menu ul li {
+    background-color: #ac2626;
+}
+
+
+#sidebar > .inner {
+    background-color: #ac2626;
+}
+
+
+#header .logo {
+    font-size: xxx-large;
+}
+
+ 
+ 
+/*body, input, select, textarea {
+Modifie la couleur des présentations d'articles
+    color: 
+
+    #7f888f;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 1.65;
+
+} */
+ 
